@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags HTML5</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+        }
+
+        h1, h2 {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        header {
+            background-color: rgb(205, 204, 204);
+            margin: 10px;
+            padding: 10px;
+        }
+
+        nav {
+            background-color: rgb(100, 98, 98);
+            padding: 5px;
+
+            /* box-shadow (sombra) parâmetros:
+            Deslocamento horizontal (x).
+            Deslocamento vertical (y).
+            Borrar.
+            Espalhar.
+            Cor.            
+            */
+            
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.315);
+        }
+
+        nav > a {
+            color: white;
+            text-decoration: none;
+            margin-right: 30px;
+        }
+        nav > a:hover {
+            
+            color: aqua;
+        }
+
+        main {
+            background-color: rgb(205, 204, 204);
+            margin: 10px;
+            padding: 10px;
+            border-radius: 20px 0px;
+            /*
+            Parâmetros:
+            4 parâmetros
+            top-left top-rigth bottom-right botton-left
+            2 parâmetros
+            top-left bottom-right e top-right bottom-left
+            */
+            box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.3);
+        }
+
+        aside {
+            background-color: rgb(171, 170, 170);
+            padding: 5px;
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.9);
+            color: white;
+            text-align: center;
+            padding: 15px;            
+        }
+        
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="#">Link01</a>
+            <a href="#">Link02</a>
+            <a href="#">Link03</a>
+            <a href="#">Link04</a>
+            <a href="#">Link05</a>
+        </nav>
+        
+    </header>
+
+    <main>
+        <section>
+            <article>
+                <h2>Notícias sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sint necessitatibus consequatur deserunt commodi deleniti maiores. Fuga, porro ratione dolore rerum consectetur hic, pariatur quae veritatis nulla sequi dignissimos voluptatum?</p>
+                <aside>Artigo escrito por José da Silva.</aside>
+            </article>
+            <article>
+                <h2>Notícias sobre Esportes</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sint necessitatibus consequatur deserunt commodi deleniti maiores. Fuga, porro ratione dolore rerum consectetur hic, pariatur quae veritatis nulla sequi dignissimos voluptatum?</p>
+                <aside>Artigo escrito por Paulo Oliveira.</aside>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        Desenvolvido por Magal Solution
+    </footer>
+    
+</body>
+</html>
