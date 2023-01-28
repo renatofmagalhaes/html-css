@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 /*IMPORTANDO FONTES DO SITE GOOGLE FONTS*/
 @import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
@@ -16,7 +17,6 @@
     --fonte2: 'Passion One', cursive;
     --fonte3: 'Sriracha', cursive;
 }
-
 
 html, body {
     /* A altura mínima será 100% da altura da view port */
@@ -39,8 +39,7 @@ header > h1 {
     /*text-transform: uppercase;*/
     font-family: var(--fonte2);
      /*TORNANDO A FONTE RESPONSIVA - TAMANHO*/
-    font-size: 8vw;
-     
+    font-size: 8vw;     
 }
 
 header > p {
@@ -80,8 +79,7 @@ section.imagem {
     background-color: rgba(0, 0, 0, 0.255);
     color: white;
     box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.401);
-    background-size: cover;
-    
+    background-size: cover;    
     /*FIXAR A IMAGEM DE FUNDO PARA EFEITO PARALAX*/
     background-attachment: fixed;
 }
@@ -91,7 +89,6 @@ section.imagem > p {
     display: inline-block;
     padding: 5px;
     text-shadow: 1px 1px 0px black;
-    
 }
 
 section#img01{
