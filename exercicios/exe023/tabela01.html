@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            height: 400px;
+            width: 600px;
+            border-collapse: collapse;
+        }
+        tr.cor {
+            background-color: lightgray;
+        }
+        td {
+            border: solid 1px black;            
+            padding: 10px;
+            text-align: center;
+        }
+        td.direita {
+            text-align: right;
+        }
+        td.topo {
+            vertical-align: top;
+        }       
+        
+        
+    </style>
+</head>
+<body>
+
+    <!--
+        table ----------------------- <table> </table>           
+            table row --------------- <tr> </tr>
+                    table header ---- <th><th>
+                        table data -- <td></td>
+    -->
+
+    <h1>Tabela</h1>
+
+    <table>
+        <tr>
+            <td class="topo">A1</td>
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        <tr class="cor">
+            <td class="topo">A2</td>
+            <td>B2</td>
+            <td class="direita">C2</td>
+        </tr>
+        <tr>
+            <td>A3</td>
+            <td>B3</td>
+            <td class="direita">C3</td>
+        </tr>
+        <tr class="cor">
+            <td>A4</td>
+            <td>B4</td>
+            <td>C4</td>
+        </tr>
+    </table>
+    
+</body>
+</html>
