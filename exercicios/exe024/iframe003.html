@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframe</title>
+    <style>
+        iframe{
+            width: 95vw;
+            height: 800px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam, debitis voluptatibus voluptates iste nostrum nihil beatae consequatur placeat quos minus eveniet ducimus deleniti! Possimus quidem beatae reprehenderit amet mollitia eos.</p>
+    <ul>
+        <li><a href="http://sif-piloto.pbh.gov.br/Login.php?comp=1" target="frame">Primeira Opção</a></li>
+        <li><a href="https://iptu.pbh.gov.br/IptuOnline/index.xhtml" target="frame">Segunda opção</a></li>
+        <li><a href="http://alf.siatu.pbh.gov.br/siatu-urbano-consulta-previa-publico/f/t/inicial" target="frame">Terceira opção</a></li>
+    </ul>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet qui reprehenderit reiciendis nisi. Aperiam eum, et quis ut quae officiis, sit, accusantium quidem labore ad neque exercitationem vitae incidunt! Hic?</p>
+    <iframe srcdoc="<h1>Escolha uma das opções acima</h1> <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius maiores beatae suscipit. Accusamus fuga maxime architecto suscipit atque quasi magni tempora velit. Atque, maxime sed quam iusto vitae aliquam animi!</p>" name="frame">
+        <p>Seu navegador não é compatível com iframe.</p>
+    </iframe>
+    
+</body>
+</html>
