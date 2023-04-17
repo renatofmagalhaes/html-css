@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+/*Estilos para Tela*/
+
+/* Reset */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    font-weight: normal;
+}
+
+header h1 {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+menu ul {
+    list-style-type: none;
+    background-color: lightblue;
+}
+menu li {
+    display: inline-block;
+    background-color: gray;
+    color: white;
+    padding: 10px;
+}
+
+article {
+    width: 600px;
+    display: block;
+    margin: auto;
+    text-align: justify;
+    line-height: 1.3em;
+    padding-top: 20px;
+}
+
+article h2 {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+article p {
+    padding-bottom: 10px;
+}
