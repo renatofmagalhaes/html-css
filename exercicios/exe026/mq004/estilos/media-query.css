@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+/*Demais Mídias*/
+
+/* Typical Device Breakpoints
+---------------------------------
+Recomendações do site w3c:
+
+Telas pequenas: até 600px.
+Telas de celular: de 600px até 768px.
+Telas de tablet: de 768px até 992px.
+Telas de desktop: de 992px até 1200px.
+Telas Grandes: a partir de 1200px.
+
+*/
+
+/*IMPRESSÃO*/
+@media print {
+
+}
+
+/*TABLET*/
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+   body {
+    background-image: url(../imagens/back-tablet.jpg);
+    
+   }
+
+   img#phone { display: none;}
+   img#tablet { display: block;}
+   img#print { display: none;}
+   img#pc { display: none;}
+   img#tv { display: none;}
+}
+
