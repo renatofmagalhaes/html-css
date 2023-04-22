@@ -6,25 +6,37 @@
 ---------------------------------
 Recomendações do site w3c:
 
-Telas pequenas: até 600px.
-Telas de celular: de 600px até 768px.
-Telas de tablet: de 768px até 992px.
-Telas de desktop: de 992px até 1200px.
-Telas Grandes: a partir de 1200px.
-
+Dispositivos pequenos (tablets retrato e telefones celulares grandes, 600px até 768px)
+Dispositivos médios (tablets de paisagem, 768px até 992px)
+Dispositivos grandes (laptops/desktops, 992px até 1200px)
+Dispositivos extragrandes (televisores grandes, 1200px e superior)
 */
 
 /*IMPRESSÃO*/
-@media print {
 
+@media print {
+    *{
+        font-family: 'Courier New', Courier, monospace;
+        color: black;
+    }
+
+    /*Não é necessário acrescentar imagem de fundo background*/
+
+    main {
+        border: 2px solid black;
+    }
+    img#phone { display: none;}
+    img#tablet { display: none;}
+    img#print { display: block;}
+    img#pc { display: none;}
+    img#tv { display: none;}
 }
 
-/*TABLET*/
+/*TABLET DE PAISAGEM 768px até 992px*/
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
    body {
-    background-image: url(../imagens/back-tablet.jpg);
-    
+    background-image: url(../imagens/back-tablet.jpg)    
    }
 
    img#phone { display: none;}
@@ -34,3 +46,28 @@ Telas Grandes: a partir de 1200px.
    img#tv { display: none;}
 }
 
+/*LAPTOPS/DESKTOPS 992px até 1200px */
+@media screen  and (min-width: 992px) and (max-width: 1200px) {
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+    img#phone { display: none;}
+    img#tablet { display: none;}
+    img#print { display: none;}
+    img#pc { display: block;}
+    img#tv { display: none;}
+}
+
+/*TV's GRANDES ACIMA DE  1200px*/
+@media screen and (min-width: 1200px) {
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    img#phone { display: none;}
+    img#tablet { display: none;}
+    img#print { display: none;}
+    img#pc { display: none;}
+    img#tv { display: block;}
+}
