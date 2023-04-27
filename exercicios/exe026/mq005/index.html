@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu Responsivo</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <header>
         <h1>Meu Site</h1>
-        <menu>
+        <span class="material-icons" id="burger" onclick="clickMenu()">menu</span>
+        <menu id="itens">
             <ul>
                 <li><a href="">Opção 1</a></li>
                 <li><a href="">Opção 2</a></li>
@@ -29,6 +31,15 @@
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt molestias nulla aliquam, pariatur necessitatibus delectus illo accusantium error atque numquam exercitationem aliquid. Consequatur ex cum inventore fugit unde, porro maiores. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta porro adipisci illo minima, doloremque recusandae incidunt quae quam error repellendus, excepturi temporibus earum in veritatis rem obcaecati, totam accusamus consequatur.</p>
         </article>
     </main>
+    <script>
+        function clickMenu(){
+            if(itens.style.display == 'block'){
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
     
 </body>
 </html>
