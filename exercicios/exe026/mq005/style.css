@@ -22,7 +22,7 @@ header h1 {
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3)
 }
 
-#burger {
+#burguer {
     background-color: rgb(49, 49, 49);
     color: white;
     display: block;
@@ -30,29 +30,28 @@ header h1 {
     padding: 10px;
 }
 
-#burger:hover {
+#burguer:hover {
     background-color: white;
     color: black;
     cursor: pointer;    
 }
 
 menu {
-    display: none;
-    
+    display: none;    
 }
 
 menu ul {
-    list-style-type: none;
-    background-color: gray;
+    list-style-type: none;    
 }
 
 menu a {
     display: block; /*Para configurar tudo na tag a pulando a tag li*/
     text-decoration: none;
     text-align: center;
+    background-color: gray;
     color: white;
     padding: 10px;
-    border-top: solid 2px rgb(167, 167, 167);    
+    border-top: solid 1px rgb(167, 167, 167);    
 }
 
 menu a:hover {

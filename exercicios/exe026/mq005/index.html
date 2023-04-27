@@ -8,12 +8,13 @@
     <link rel="stylesheet" href="style.css">
     <!--LINK PARA ICONE HAMBURGER DO GOOGLE-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="media-query.css">
 </head>
-<body>
+<body onresize="monitoraTamanho()">
     <header>
         <h1>Meu Site</h1>
         <!--ICONE HAMBURGER DO GOOGLE-->
-        <span class="material-icons" id="burger" onclick="clickMenu()">menu</span>
+        <span class="material-icons" id="burguer" onclick="clickMenu()">menu</span>
         <menu id="itens">
             <ul>
                 <li><a href="">Opção 1</a></li>
@@ -42,7 +43,14 @@
                 itens.style.display = 'block'
             }
         }
-    </script>
-    
+
+        function monitoraTamanho(){
+            if (window.innerWidth >= 768){
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+    </script>    
 </body>
 </html>
