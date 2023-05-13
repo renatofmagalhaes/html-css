@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="estilo/media-query.css">
+    <title>Media Query</title>
+</head>
+<body onresize="monitoraTela()">
+    <header>
+        <h1>Meu Site</h1>
+        <span class="material-icons" id="burguer" onclick="clickMenu()">menu</span>
+        <menu id="opcoes">
+            <ul>
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 2</a></li>
+                <li><a href="#">Opção 3</a></li>
+                <li><a href="#">Opção 4</a></li>
+            </ul>
+        </menu>
+    </header>    
+    <main>
+        <article>
+            <h2>Media Query</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, ut. Voluptas, doloremque? Nemo totam nihil similique assumenda architecto eos, cum eligendi nulla consequuntur culpa! Illum quisquam provident officia voluptas. Illum?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, debitis commodi! Doloribus facilis magni magnam quae est dignissimos sunt voluptatibus beatae id. Earum nesciunt officia, eligendi amet dicta ullam inventore. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod rem quibusdam eius animi temporibus dolore? Quis quidem perferendis error temporibus ea, repellat laudantium sequi nulla similique enim magni, quo dignissimos.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur, facere amet sequi quasi iste veniam distinctio culpa, quod voluptatem nostrum veritatis, similique optio doloribus sunt dignissimos repudiandae. Rerum, autem tenetur.</p>
+        </article>
+    </main>
+    <script>
+        function clickMenu(){
+            if (opcoes.style.display == "block"){
+                opcoes.style.display = "none"
+            } else {
+                opcoes.style.display = "block"
+            }            
+        }
+        function monitoraTela(){
+            if (window.innerWidth >= 768){
+                opcoes.style.display = 'block'
+            } else {
+                opcoes.style.display = 'none'
+            }
+        }
+
+    </script>
+</body>
+</html>

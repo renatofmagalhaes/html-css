@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;    
+}
+
+html {
+    height: 100vh;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.5);
+    color:white;
+    background-image: url(../imagens/geometric-1732847_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center center
+}
+
+main {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 400px;
+    display: block;
+    margin: auto;
+    padding: 10px; 
+    margin-top: 200px;
+    border-radius: 10px;
+}
+
+main h1 {
+    font-size: 2em;
+    text-align: center;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.507);
+}
+
+main p {
+    padding-top: 30px;
+}
+
+main .campo {
+    font-size: 1.2em;
+    text-align: center;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.507);
+    
+}
+
+main #botoes {
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 1.2em;
+}

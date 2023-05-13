@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+/* Typical Device Breakpoints
+---------------------------------
+Recomendações do site w3c:
+
+Dispositivos pequenos (tablets retrato e telefones celulares grandes, 600px até 768px)
+Dispositivos médios (tablets de paisagem, 768px até 992px)
+Dispositivos grandes (laptops/desktops, 992px até 1200px)
+Dispositivos extragrandes (televisores grandes, 1200px e superior)
+*/
+
+@media screen and (min-width: 768px) {
+  body {
+    background-image: url(../imagens/back-tablet.jpg);
+  }    
+}
+
+@media screen and (min-width: 992px) {
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }    
+}
